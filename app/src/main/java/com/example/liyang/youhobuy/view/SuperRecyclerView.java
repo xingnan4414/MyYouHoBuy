@@ -85,6 +85,7 @@ public class SuperRecyclerView extends RecyclerView {
     }
 
     public void addHeader(View view) {
+
        check();
         heads.add(view);
     }
