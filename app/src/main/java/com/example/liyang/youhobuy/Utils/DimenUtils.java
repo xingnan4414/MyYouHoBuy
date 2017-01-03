@@ -8,6 +8,7 @@ import com.example.liyang.youhobuy.MyApplication;
 
 public class DimenUtils {
     public static int getDimension(int dp){
+
         return (int) (MyApplication.app.getResources().getDisplayMetrics().density*dp+0.5f);
     }
 }
