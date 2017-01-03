@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/naviGroup"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:checked="true"
+            android:id="@+id/shouye"
+            style="@style/main_fragment_bottom_navi"
+            android:drawableTop="@drawable/selector_navigation_shouye"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/fenlei"
+            style="@style/main_fragment_bottom_navi"
+            android:drawableTop="@drawable/selector_navigation_fenlei"
+            android:text="分类" />
+
+        <RadioButton
+            android:id="@+id/guang"
+            style="@style/main_fragment_bottom_navi"
+            android:drawableTop="@drawable/selector_navigation_guang"
+            android:text="逛" />
+
+        <RadioButton
+            android:id="@+id/gouwuche"
+            style="@style/main_fragment_bottom_navi"
+            android:drawableTop="@drawable/selector_navigation_gouwuche"
+            android:text="购物车" />
+
+        <RadioButton
+            android:id="@+id/wode"
+            style="@style/main_fragment_bottom_navi"
+            android:drawableTop="@drawable/selector_navigation_wode"
+            android:text="我的" />
+    </RadioGroup>
+    <Button
+        android:onClick="begin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <FrameLayout
+        android:layout_above="@id/naviGroup"
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+</RelativeLayout>

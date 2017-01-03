@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_choose"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/pulish_filter_bangkok"
+    tools:context="com.example.liyang.youhobuy.ChooseActivity">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/boys"
+            android:button="@drawable/selector_choose_item_boys"
+            style="@style/choose_radio_button" />
+
+        <RadioButton
+            android:id="@+id/girls"
+            style="@style/choose_radio_button"
+            android:button="@drawable/selector_choose_item_girls" />
+
+        <RadioButton
+            android:id="@+id/kids"
+            style="@style/choose_radio_button"
+            android:button="@drawable/selector_choose_item_kids" />
+
+        <RadioButton
+            android:id="@+id/life"
+            android:layout_marginBottom="0dp"
+            style="@style/choose_radio_button"
+            android:button="@drawable/selector_choose_item_lifestyle" />
+    </RadioGroup>
+</RelativeLayout>
